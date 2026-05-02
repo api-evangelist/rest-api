@@ -1,0 +1,152 @@
+vocabulary:
+  name: REST API Vocabulary
+  description: >-
+    Normative vocabulary for the REST (Representational State Transfer)
+    architectural style, covering core concepts, HTTP semantics, resource
+    modeling patterns, and best practices for designing and consuming REST APIs.
+  created: '2026-05-02'
+  modified: '2026-05-02'
+  terms:
+    - term: REST
+      definition: >-
+        Representational State Transfer. An architectural style for designing
+        distributed hypermedia systems, originally defined by Roy Fielding in his
+        2000 doctoral dissertation. REST emphasizes a uniform interface, stateless
+        communication, client-server separation, cacheability, and layered systems.
+      tags:
+        - Architecture
+        - Foundational
+    - term: Resource
+      definition: >-
+        Any named information entity that can be addressed via a URI. Resources
+        are the fundamental abstraction in REST, representing domain objects,
+        collections, or services accessible via the web.
+      tags:
+        - Architecture
+        - Core Concept
+    - term: URI
+      definition: >-
+        Uniform Resource Identifier. A string that identifies a resource. In REST
+        APIs, URIs serve as the addresses for resources (e.g., /users/123).
+      tags:
+        - HTTP
+        - Core Concept
+    - term: HTTP Method
+      definition: >-
+        A verb that indicates the desired action to be performed on a resource.
+        REST APIs use GET (read), POST (create), PUT (replace), PATCH (modify),
+        DELETE (remove), HEAD (headers only), and OPTIONS (capabilities).
+      tags:
+        - HTTP
+        - Core Concept
+    - term: Endpoint
+      definition: >-
+        A specific URI combined with an HTTP method that defines an operation
+        available in a REST API (e.g., GET /users returns a list of users).
+      tags:
+        - API Design
+        - Core Concept
+    - term: Stateless
+      definition: >-
+        A REST constraint requiring each request from client to server to contain
+        all information needed to understand and process the request, with no
+        session state stored on the server between requests.
+      tags:
+        - Architecture
+        - Constraint
+    - term: Representation
+      definition: >-
+        A snapshot of a resource's current state as returned by the server, most
+        commonly encoded as JSON or XML. The representation is what clients
+        receive when they GET a resource.
+      tags:
+        - Architecture
+        - Core Concept
+    - term: Status Code
+      definition: >-
+        A three-digit numeric code returned by the server in an HTTP response
+        indicating the result of the request. Common codes include 200 OK,
+        201 Created, 400 Bad Request, 401 Unauthorized, 404 Not Found,
+        500 Internal Server Error.
+      tags:
+        - HTTP
+        - Response
+    - term: Content Negotiation
+      definition: >-
+        A mechanism allowing clients and servers to agree on the format of a
+        response, typically via Accept and Content-Type headers (e.g.,
+        application/json, application/xml).
+      tags:
+        - HTTP
+        - Protocol
+    - term: Idempotent
+      definition: >-
+        A property of HTTP methods where multiple identical requests produce
+        the same result as a single request. GET, PUT, DELETE, and HEAD are
+        idempotent; POST is not.
+      tags:
+        - HTTP
+        - Semantics
+    - term: Safe Method
+      definition: >-
+        An HTTP method that does not modify the state of the server. GET, HEAD,
+        and OPTIONS are safe methods; POST, PUT, PATCH, and DELETE are not.
+      tags:
+        - HTTP
+        - Semantics
+    - term: HATEOAS
+      definition: >-
+        Hypermedia As The Engine Of Application State. A REST constraint where
+        server responses include links to related resources and available actions,
+        enabling clients to navigate the API dynamically without prior knowledge
+        of the URL structure.
+      tags:
+        - Architecture
+        - Constraint
+    - term: OpenAPI
+      definition: >-
+        A specification (formerly Swagger) for describing REST APIs in a
+        machine-readable format (YAML or JSON), enabling documentation generation,
+        client SDK generation, and API validation.
+      tags:
+        - Tooling
+        - Standards
+    - term: Pagination
+      definition: >-
+        A pattern for dividing large collections into pages of results, commonly
+        implemented via query parameters (page, offset, cursor) and Link headers
+        or response metadata indicating total count and navigation links.
+      tags:
+        - API Design
+        - Pattern
+    - term: Authentication
+      definition: >-
+        The process of verifying a client's identity before granting access to
+        API resources. Common REST authentication schemes include API keys,
+        Bearer tokens, OAuth 2.0, and Basic auth.
+      tags:
+        - Security
+        - API Design
+    - term: Rate Limiting
+      definition: >-
+        A constraint on the number of API requests a client can make in a given
+        time window, enforced to protect API infrastructure. Often communicated
+        via X-RateLimit headers.
+      tags:
+        - API Design
+        - Operations
+    - term: JSON
+      definition: >-
+        JavaScript Object Notation. A lightweight, human-readable data interchange
+        format that is the dominant representation format for REST APIs.
+      tags:
+        - Data Format
+        - Standards
+    - term: Versioning
+      definition: >-
+        A strategy for managing breaking changes to a REST API by introducing
+        new API versions, typically via URL path (/v1/, /v2/), Accept header,
+        or query parameter.
+      tags:
+        - API Design
+        - Lifecycle

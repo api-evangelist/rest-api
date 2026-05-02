@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "rest": "https://restfulapi.net/vocab#",
+    "http": "https://www.iana.org/assignments/http-methods/",
+    "SoftwareApplication": "SoftwareApplication",
+    "TechArticle": "TechArticle",
+    "name": "name",
+    "description": "description",
+    "url": "url",
+    "Resource": {
+      "@id": "rest:Resource",
+      "@type": "rdfs:Class"
+    },
+    "Endpoint": {
+      "@id": "rest:Endpoint",
+      "@type": "rdfs:Class"
+    },
+    "HttpMethod": {
+      "@id": "rest:HttpMethod",
+      "@type": "rdfs:Class"
+    },
+    "StatusCode": {
+      "@id": "rest:StatusCode",
+      "@type": "rdfs:Class"
+    },
+    "Representation": {
+      "@id": "rest:Representation",
+      "@type": "rdfs:Class"
+    },
+    "method": {
+      "@id": "rest:method",
+      "@type": "rest:HttpMethod"
+    },
+    "path": {
+      "@id": "rest:path"
+    },
+    "authentication": {
+      "@id": "rest:authentication"
+    },
+    "pagination": {
+      "@id": "rest:pagination"
+    },
+    "rateLimiting": {
+      "@id": "rest:rateLimiting"
+    },
+    "versioning": {
+      "@id": "rest:versioning"
+    },
+    "contentType": {
+      "@id": "rest:contentType"
+    },
+    "statusCode": {
+      "@id": "rest:statusCode",
+      "@type": "rest:StatusCode"
+    }
+  }
+}
