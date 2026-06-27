@@ -32,7 +32,7 @@ common:
   - type: Vocabulary
     url: >-
       https://raw.githubusercontent.com/api-evangelist/rest-api/refs/heads/main/vocabulary/rest-api-vocabulary.yml
-  - type: JSON-LD Context
+  - type: JSONLDContext
     url: >-
       https://raw.githubusercontent.com/api-evangelist/rest-api/refs/heads/main/json-ld/rest-api-context.jsonld
 maintainers:
